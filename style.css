@@ -11,18 +11,18 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #FCAEAE;
+    background: #9BBEC8;
 }
 
 .gif{
-    height: 100%;
+    height: 200px;
     width: 100%;
 }
 
 h2{
     text-align: center;
     font-size: 1.5em;
-    color: #960d16;
+    color: #427D9D;
     margin: 15px 0;
 }
 
@@ -40,7 +40,6 @@ button{
     position: absolute;
     height: 45px;
     width: 150px;
-    color: white;
     font-size: 1.2rem;
     border-radius: 30px;
     cursor: pointer;
@@ -50,16 +49,16 @@ button{
 
 .yes-btn{
     margin-left: -200px;
-    background: #FF8989;
-    border: 2px solid #FF8989;
+    background: #427D9D;
+    border: 2px solid #427D9D;
     color: #FFEADD;
 }
 
 .yes-btn:hover{
-    box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
-    background-color: #FFEADD;
-    border: 2px solid #FFEADD;
-    color: #FCAEAE;
+    box-shadow: 2px 2px 4px rgba(104, 146, 211, 0.5);
+    background-color: #DDF2FD;
+    border: 2px solid #DDF2FD;
+    color: #427D9D;
     font-weight: bolder;
 
 }
@@ -67,8 +66,8 @@ button{
 
 .no-btn{
     margin-right: -200px;
-    background: #FFEADD;
-    color: #FF8989;
-    border: 2px solid #FFEADD;
+    background: #DDF2FD;
+    color: #427D9D;
+    border: 2px solid #DDF2FD;
 
 }
