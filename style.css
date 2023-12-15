@@ -1,5 +1,4 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +6,7 @@
 
 }
 
-body {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,12 +14,12 @@ body {
     background: #FCAEAE;
 }
 
-.gif {
+.gif{
     height: 100%;
     width: 100%;
 }
 
-h2 {
+h2{
     text-align: center;
     font-size: 1.5em;
     color: #960d16;
@@ -37,7 +36,7 @@ h2 {
 }
 
 
-button {
+button{
     position: absolute;
     height: 45px;
     width: 150px;
