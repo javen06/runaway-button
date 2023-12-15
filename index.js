@@ -8,10 +8,10 @@ yesBtn.addEventListener("click", () => {
   question.innerHTML = "i wouldn't take no for an answer...";
 
   gif.src =
-    "https://media.giphy.com/media/p5ncc0eWSGKkw/giphy.gif";
-  gif.style.width = "400px"; 
-  gif.style.height = "400px"; 
-  document.body.style.backgroundColor = "#FCAEAE";
+    "https://media.giphy.com/media/osxoHh7xRNLTa/giphy.gif";
+  gif.style.width = "200px"; 
+  gif.style.height = "200px"; 
+  document.body.style.backgroundColor = "#9BBEC8";
   gif.style.marginTop = "60px";
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
