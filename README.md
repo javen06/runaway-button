@@ -1,3 +1,3 @@
 # runningButton
 
-https://javen06.github.io/runningButton/
+https://javen06.github.io/runaway-button/
