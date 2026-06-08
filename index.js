@@ -5,7 +5,7 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "i wouldn't take no for an answer...";
+  question.textContent = "i wouldn't take no for an answer...";
 
   gif.src =
     "https://media.giphy.com/media/osxoHh7xRNLTa/giphy.gif";
@@ -18,16 +18,22 @@ yesBtn.addEventListener("click", () => {
   
 });
 
-noBtn.addEventListener("mouseover", () => {
+function moveNoButton() {
   const noBtnRect = noBtn.getBoundingClientRect();
-  const maxX = window.innerWidth - noBtnRect.width;
-  const maxY = window.innerHeight - noBtnRect.height;
+  const padding = 12;
+  const maxX = Math.max(padding, window.innerWidth - noBtnRect.width - padding);
+  const maxY = Math.max(padding, window.innerHeight - noBtnRect.height - padding);
 
-  const randomX = Math.floor(Math.random() * maxX);
-  const randomY = Math.floor(Math.random() * maxY);
+  const randomX = padding + Math.floor(Math.random() * (maxX - padding + 1));
+  const randomY = padding + Math.floor(Math.random() * (maxY - padding + 1));
 
+  noBtn.style.position = "fixed";
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
+}
 
-
+noBtn.addEventListener("pointerenter", moveNoButton);
+noBtn.addEventListener("touchstart", (event) => {
+  event.preventDefault();
+  moveNoButton();
 });
